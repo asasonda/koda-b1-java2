@@ -15,6 +15,7 @@ public class App
         System.out.println("Permanent Employee");
         data1.showEmployee();
         System.out.println();
+        System.out.println("Salary increase: 1000000");
         data1.giveRaise(1000000);
         System.out.println("Current Salary: " +karyawan1.getEmployeeSalary());
         System.out.println("============================");
@@ -24,9 +25,11 @@ public class App
         data2.giveRaise(300000);
         System.out.println("Current Salary: " +karyawan2.getEmployeeSalary());
         System.out.println();
+        System.out.println("Salary increase: 1000000");
         data2.giveRaise(1000000);
         System.out.println("Current Salary: " +karyawan2.getEmployeeSalary());
         System.out.println();
+        System.out.println("Salary increase: -500000");
         data2.giveRaise(-500000);
         System.out.println("Current Salary: " +karyawan2.getEmployeeSalary());
     }
