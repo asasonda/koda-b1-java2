@@ -16,21 +16,37 @@ public class App
         data1.showEmployee();
         System.out.println();
         System.out.println("Salary increase: 1000000");
-        data1.giveRaise(1000000);
+        try {
+            data1.giveRaise(1000000); 
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: "+ e.getMessage());
+        }
         System.out.println("Current Salary: " +karyawan1.getEmployeeSalary());
         System.out.println("============================");
 
         System.out.println("Contract Employee");
         data2.showEmployee();
-        data2.giveRaise(300000);
+        try {
+            data2.giveRaise(300000);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: "+ e.getMessage());
+        }
         System.out.println("Current Salary: " +karyawan2.getEmployeeSalary());
         System.out.println();
         System.out.println("Salary increase: 1000000");
-        data2.giveRaise(1000000);
+        try {
+            data2.giveRaise(1000000);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: "+ e.getMessage());
+        }
         System.out.println("Current Salary: " +karyawan2.getEmployeeSalary());
         System.out.println();
         System.out.println("Salary increase: -500000");
-        data2.giveRaise(-500000);
+        try {
+            data2.giveRaise(-500000);  
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: "+ e.getMessage());
+        }
         System.out.println("Current Salary: " +karyawan2.getEmployeeSalary());
     }
 }

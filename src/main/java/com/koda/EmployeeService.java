@@ -13,17 +13,6 @@ public class EmployeeService {
         System.out.println("Position: "+ employee.getEmployeePosition());
         System.out.println("Departement: "+ employee.getEmployeeDepartement());
         System.out.println("Salary: "+ employee.getEmployeeSalary());
-
-        // System.out.println();
-
-        // employee.increaseSalary(1000000);
-        // System.out.println("Salary Increase: 1000000");
-        // System.out.println("Current Salary: "+ employee.getEmployeeSalary());
-        
-        // System.out.println();
-        // employee.increaseSalary(-500000);
-        // System.out.println("Current Salary: "+ employee.getEmployeeSalary());
-
     }
     public void giveRaise(int amount){
         employee.increaseSalary(amount);
