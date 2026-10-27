@@ -1,6 +1,6 @@
 package com.koda;
 
-public class Employee {
+public abstract class Employee {
     private String employeeId;
     private String name;
     private String position;
@@ -31,13 +31,9 @@ public class Employee {
         return salary;
     }
 
-    public void increaseSalary(int amount){
-        if(amount < 0){
-            System.out.println("Error: kenaikan Gaji harus lebih dari 0");
-        }
-        else{
-            salary += amount;
-        }
+    protected abstract void increaseSalary(int amount);
 
+    public  void addSalary(int amount){
+        salary += amount;
     }
 }
